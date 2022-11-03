@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EquivalentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tableCalculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:background="@color/pink">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Alim."
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eq"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kcal"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pro"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lip"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="HCO"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                </TableRow>
+
+                <!-- Table Data -->
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Verd."
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEq"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewPro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLip"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHco"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Frutas"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextLip"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalFrutas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProFrutas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipFrutas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoFrutas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cereales S/G"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqCerealesSG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalCerealesSG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProCerealesSG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipCerealesSG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoCerealesSG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cereales C/G"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqCerealesCG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalCerealesCG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProCerealesCG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipCerealesCG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoCerealesCG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Leguminosas"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqLeguminosas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalLeguminosas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProLeguminosas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipLeguminosas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoLeguminosas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="AOA MBAG"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqAoaMbag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalAoaMbag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProAoaMbag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipAoaMbag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoAoaMbag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+                </TableRow>
+
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="AOA BAG"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqAoaBag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalAoaBag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProAoaBag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipAoaBag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoAoaBag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="AOA MAG"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqAoaMag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalAoaMag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProAoaMag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipAoaMag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoAoaMag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="AOA AAG"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqAoaAag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalAoaAag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProAoaAag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipAoaAag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoAoaAag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Leche des"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqLecheDes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalLecheDes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProLecheDes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipLecheDes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoLecheDes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Leche semi"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqLecheSemi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalLecheSemi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProLecheSemi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipLecheSemi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoLecheSemi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Leche entera"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqLecheEntera"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalLecheEntera"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProLecheEntera"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipLecheEntera"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoLecheEntera"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Leche CA"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqLecheCa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalLecheCa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProLecheCa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipLecheCa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoLecheCa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Aceites S/P"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqAceitesSP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalAceitesSP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProAceitesSP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipAceitesSP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoAceitesSP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Aceites C/P"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqAceitesCP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalAceitesCP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProAceitesCP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipAceitesCP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoAceitesCP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Azucar S/G"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqAzucarSG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalAzucarSG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProAzucarSG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipAzucarSG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoAzucarSG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Azucar C/G"
+                        android:background="@color/pink"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextEqAzucarCG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewKcalAzucarCG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewProAzucarCG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewLipAzucarCG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewHcoAzucarCG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+
+                </TableRow>
+
+
+
+
+
+
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Suma %"
+                        android:background="@color/green"
+                        android:textColor="@color/white"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewSuma"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textColor="@color/green"
+                        android:textSize="14sp"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewSumaKcal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:text="0"
+                        android:textColor="@color/green"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/textViewSumaGramos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/green"
+                        android:padding="10sp"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"/>
+                </TableRow>
+
+
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnChangeSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptar Cambios"
+                    android:background="@drawable/rounded_button"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/saludable" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dieta" />
+
+                    <TextView
+                        android:id="@+id/txtFormula"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:transitionName="nameTransition"
+                        android:text="dieta en Kcal"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="La dieta se muestra en Kcal"
+                        android:textSize="12dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp" />
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

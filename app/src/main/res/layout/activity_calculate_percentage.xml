@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CalculatePercentageActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tableCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:background="@color/pink">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nutrientes"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Porcentaje"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kcal"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gramos"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+            </TableRow>
+
+            <!-- Table Data -->
+            <TableRow
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="HCO"
+                    android:background="@color/pink"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:id="@+id/editTextHCO"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textViewHcoKcal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kcal"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textViewGramosHco"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gramos"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lip"
+                    android:background="@color/pink"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:id="@+id/editTextLip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textViewLip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kcal"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textViewGramosLip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gramos"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pro"
+                    android:background="@color/pink"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:id="@+id/editTextPro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textViewPro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kcal"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textViewGramosPro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gramos"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Suma %"
+                    android:background="@color/green"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textViewSuma"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/green"
+                    android:textSize="14sp"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textViewSumaKcal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/green"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textViewSumaGramos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/green"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+            </TableRow>
+
+
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnChangeSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aceptar Cambios"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/saludable" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dieta" />
+
+                <TextView
+                    android:id="@+id/txtFormula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:transitionName="nameTransition"
+                    android:text="dieta en Kcal"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="La dieta se muestra en Kcal"
+                    android:textSize="12dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
